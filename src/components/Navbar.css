@@ -1,0 +1,45 @@
+.navbar {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.dark .navbar {
+  background: rgba(2, 6, 23, 0.8);
+}
+
+.navbar-logo {
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+}
+
+.navbar-link {
+  position: relative;
+  transition: 0.3s;
+}
+
+.navbar-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #22d3ee;
+  transition: 0.3s;
+}
+
+.navbar-link:hover::after {
+  width: 100%;
+}
+
+.navbar-button {
+  transition: 0.3s;
+}
+
+.navbar-button:hover {
+  transform: rotate(90deg);
+}

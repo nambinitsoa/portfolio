@@ -1,0 +1,98 @@
+/* ===============================
+   DARK / LIGHT VIA TAILWIND
+================================ */
+
+/* SECTION */
+
+.skills-section {
+    background: linear-gradient(to bottom, #ffffff, #f1f5f9);
+    color: #0f172a;
+    transition: all 0.4s ease;
+}
+
+/* DARK MODE */
+.dark .skills-section {
+    background: linear-gradient(to bottom, #020617, #020617, #0f172a);
+    color: #ffffff;
+}
+
+/* TITLE */
+.skills-title {
+    background: linear-gradient(90deg, #818cf8, #22d3ee);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* TABS */
+
+.skills-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 14px;
+    transition: 0.3s;
+    background: #ffffff;
+}
+
+.dark .skills-tabs {
+    background: rgba(30, 41, 59, 0.5);
+}
+
+.skills-tab {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.skills-tab:hover {
+    background: rgba(56, 189, 248, 0.2);
+}
+
+.skills-tab.active {
+    background: linear-gradient(90deg, #6366f1, #22d3ee);
+    color: white;
+}
+
+/* CARDS */
+
+.skill-card {
+    padding: 22px;
+    border-radius: 14px;
+    transition: all 0.3s ease;
+    background: #ffffff;
+}
+
+.dark .skill-card {
+    background: rgba(30, 41, 59, 0.6);
+}
+
+.skill-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* PROGRESS */
+
+.progress-bar {
+    height: 8px;
+    background: #cbd5e1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dark .progress-bar {
+    background: #1e293b;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #6366f1, #22d3ee);
+    transition: width 1.2s ease;
+}
+.skill-content-grid {}

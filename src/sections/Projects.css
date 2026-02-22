@@ -1,0 +1,77 @@
+/* TITLE */
+
+.projects-title {
+    background: linear-gradient(90deg, #818cf8, #22d3ee);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* CARD */
+
+.project-card {
+    padding: 25px;
+    border-radius: 14px;
+    transition: 0.3s;
+    background: #ffffff;
+}
+.projects-section {
+    background: linear-gradient(
+        to bottom,
+        #f1ecec,
+        #f1f5f9
+    );
+}
+
+.dark .projects-section {
+    background: linear-gradient(
+        to bottom,
+        #020617,
+        #0f172a
+    );
+}
+.dark .project-card {
+    background: rgba(30, 41, 59, 0.6);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+/* TITLE */
+
+.project-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #22d3ee;
+}
+
+/* DESCRIPTION */
+
+.project-description {
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #334155;
+}
+
+.dark .project-description {
+    color: #e2e8f0;
+}
+
+/* TECHNOLOGIES */
+
+.project-tech {
+    margin-top: 10px;
+}
+
+.tech-badge {
+    display: inline-block;
+    background: linear-gradient(90deg, #6366f1, #22d3ee);
+    padding: 6px 12px;
+    margin-right: 8px;
+    margin-top: 5px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: white;
+}

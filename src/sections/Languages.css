@@ -1,0 +1,104 @@
+
+.languages-section {
+    background: linear-gradient(
+        to bottom,
+        #ffffff,
+        #f1f5f9
+    );
+}
+
+.dark .languages-section {
+    background: linear-gradient(
+        to bottom,
+        #020617,
+        #0f172a
+    );
+}
+.languages-title {
+
+    background: linear-gradient(
+        90deg,
+        #818cf8,
+        #22d3ee
+    );
+
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+
+
+/* Card */
+
+.language-card {
+
+    
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+
+}
+
+
+.language-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+
+}
+
+
+.language-name {
+
+    font-weight: bold;
+
+    color: #22d3ee;
+
+}
+
+
+.language-level {
+
+    color: #7d8085;
+
+}
+.dark .language-level {
+
+    color: #cbd5e1;
+
+}
+
+/* Progress bar */
+
+.language-bar {
+
+    height: 8px;
+
+    background: #1e293b;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    margin-top: 5px;
+
+}
+
+
+.language-fill {
+
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        #6366f1,
+        #22d3ee
+    );
+
+    transition: width 1s ease;
+
+}
