@@ -43,7 +43,7 @@ export default function Hero() {
           <div className="hero-image-container">
             <img
               src={profileImage} // <-- utiliser l'image importée
-              alt="Photo profil"
+              alt="MUHAMAD Gallot Tahiana"
               className="hero-image"
             />
           </div>
