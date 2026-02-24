@@ -21,9 +21,9 @@ export default function Hero() {
 
   return (
     <section
-      id="hero"
-      className="hero-section pt-32 pb-20 max-w-6xl mx-auto px-6"
-    >
+  id="hero"
+  className="hero-section scroll-mt-24 pt-32 pb-20 max-w-6xl mx-auto px-6"
+>
       <div className="hero-container grid md:grid-cols-2 gap-10 items-center">
         <div className="hero-left">
           <h1 className="hero-title text-5xl md:text-6xl font-bold mb-4">

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { useTheme } from "../context/ThemeContext";
+import { FaGlobe, FaSun, FaMoon, FaBars } from "react-icons/fa";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -43,16 +44,18 @@ export default function Navbar() {
   return (
     <nav className="navbar fixed w-full z-50 border-b dark:border-slate-800 border-gray-200">
       <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
+        
         <h1 className="navbar-logo text-xl font-bold text-cyan-500">
           THN
         </h1>
 
         <ul className="hidden md:flex flex-row gap-8 text-sm font-medium text-gray-700 dark:text-slate-300">
-          {links.map(link => (
+          {links.map((link) => (
             <li key={link.key}>
               <a
                 href={link.href}
                 className="navbar-link hover:text-cyan-500"
+                onClick={() => setOpen(false)}
               >
                 {text[language][link.key]}
               </a>
@@ -61,26 +64,28 @@ export default function Navbar() {
         </ul>
 
         <div className="flex items-center gap-3">
-
+          
           <button
             onClick={toggleLanguage}
-            className="px-3 py-1 border border-cyan-500 rounded text-cyan-500 hover:bg-cyan-500 hover:text-white transition"
+            className="flex items-center gap-1 px-3 py-1 border border-cyan-500 rounded text-cyan-500 hover:bg-cyan-500 hover:text-white transition"
           >
-            {language === "fr" ? "EN" : "FR"}
+            <FaGlobe />
+            <span>{language === "fr" ? "EN" : "FR"}</span>
           </button>
 
           <button
             onClick={toggleTheme}
-            className="px-3 py-1 border border-cyan-500 rounded text-cyan-500 hover:bg-cyan-500 hover:text-white transition"
+            className="flex items-center gap-1 px-3 py-1 border border-cyan-500 rounded text-cyan-500 hover:bg-cyan-500 hover:text-white transition"
           >
-            {darkMode ? "☀️" : "🌙"}
+            {darkMode ? <FaSun /> : <FaMoon />}
+            <span>{darkMode ? "Light" : "Dark"}</span>
           </button>
 
           <button
             className="navbar-button md:hidden text-2xl text-cyan-500"
             onClick={() => setOpen(!open)}
           >
-            ☰
+            <FaBars />
           </button>
         </div>
       </div>
@@ -88,7 +93,7 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden bg-white dark:bg-slate-900 border-t dark:border-slate-800 border-gray-200 fade-in">
           <ul className="flex flex-col items-center py-4 gap-4 text-gray-700 dark:text-slate-300">
-            {links.map(link => (
+            {links.map((link) => (
               <li key={link.key}>
                 <a
                   href={link.href}

@@ -1,6 +1,7 @@
 import { useLanguage } from "../context/LanguageContext";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { FaEnvelope } from "react-icons/fa"; // Icône d'enveloppe
 import "./Contact.css";
 
 export default function Contact() {
@@ -62,9 +63,13 @@ export default function Contact() {
   return (
     <section id="contact" className="contact-section py-20">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="contact-title text-center text-4xl font-bold mb-16">
-          {text[language].title}
-        </h2>
+        {/* Titre avec icône */}
+        <div className="flex items-center justify-center gap-3 mb-16">
+          <FaEnvelope className="text-4xl text-cyan-500" />
+          <h2 className="contact-title text-center text-4xl font-bold">
+            {text[language].title}
+          </h2>
+        </div>
 
         <form className="contact-form" onSubmit={handleSubmit}>
           <h3 className="contact-subtitle">

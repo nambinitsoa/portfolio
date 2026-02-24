@@ -95,4 +95,17 @@
     background: linear-gradient(90deg, #6366f1, #22d3ee);
     transition: width 1.2s ease;
 }
-.skill-content-grid {}
+/* ===== SKILLS SECTION ===== */
+
+/* Le fond est déjà géré par Tailwind dans le composant */
+.skills-section {
+    /* les classes Tailwind remplacent ce bloc */
+  }
+  
+  /* Titre avec dégradé (si tu préfères le garder en CSS) */
+ 
+  
+  /* Si tu veux supprimer ce fichier et tout mettre dans Tailwind,
+     tu peux déplacer la classe skills-title dans le composant avec :
+     className="bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent"
+  */
