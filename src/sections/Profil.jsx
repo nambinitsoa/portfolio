@@ -1,6 +1,5 @@
 import { useLanguage } from "../context/LanguageContext";
 import { FiMapPin, FiPhone, FiMail, FiGithub, FiLinkedin } from "react-icons/fi";
-import { HiDownload } from "react-icons/hi";
 import "./Profil.css";
 
 export default function Profil() {
@@ -29,9 +28,9 @@ export default function Profil() {
 
   return (
     <section
-  id="profil"
-  className="profil-section py-20 scroll-mt-24 bg-white dark:bg-slate-900 text-black dark:text-white transition-colors duration-300"
->
+      id="profil"
+      className="profil-section py-20 scroll-mt-24 bg-white dark:bg-slate-900 text-black dark:text-white transition-colors duration-300"
+    >
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="profil-title text-center text-4xl md:text-5xl font-bold mb-12">
           {text[language].title}
@@ -104,8 +103,6 @@ export default function Profil() {
                 </ul>
               </div>
 
-              {/* Bouton CV */}
-              
             </div>
           </div>
 
@@ -114,7 +111,7 @@ export default function Profil() {
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
               <img
-                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800" // à remplacer par ta photo
+                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800"
                 alt="Portrait"
                 className="relative rounded-2xl w-full h-auto object-cover shadow-xl group-hover:scale-[1.02] transition-transform duration-300"
               />
